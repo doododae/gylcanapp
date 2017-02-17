@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        ResizeMode="CanResizeWithGrip"
+        Title="MainWindow" Height="632" Width="1065">
+    <Grid Margin="0,0,2,-21">
+        <Button x:Name="button2" Content="View Compounds" HorizontalAlignment="Left" Height="20" Margin="10,138,0,0" VerticalAlignment="Top" Width="122" Click="View_Compounds"/>
+        <Button x:Name="button3" Content="Insert Compounds" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="122" Click="Insert_Compounds"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="137,10,0,0" VerticalAlignment="Top" Height="575" Width="908" SelectionChanged="Selection_View"/>
+        <Button x:Name="button" Content="View Invoices" HorizontalAlignment="Left" Margin="10,441,0,0" VerticalAlignment="Top" Width="122" Click="View_Invoices"/>
+        <Button x:Name="button4" Content="Insert Invoice" HorizontalAlignment="Left" Margin="10,466,0,0" VerticalAlignment="Top" Width="122" Click="Invoice_Modal"/>
+    </Grid>
+</Window>
+

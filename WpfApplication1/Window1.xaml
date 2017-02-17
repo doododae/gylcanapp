@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Window1" Height="289.916" Width="696.639">
+    <Grid Margin="0,0,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="185*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Accept or Cancel -->
+        <Button Name="okButton" Click="Invoice_Click" IsDefault="True" Margin="10,219,83,9" Grid.Column="2">OK</Button>
+        <Button x:Name="cancelButton" IsCancel="True" Content="Cancel" Margin="74,219,10,10" Grid.Column="4"/>
+        <TextBox x:Name="Invoice_textBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="Invoice_ID" Grid.ColumnSpan="3" Content="Invoice ID" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="26" Width="62"/>
+        <TextBox x:Name="Email_textBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="Email" Grid.ColumnSpan="3" Content="Email/Name" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
+        <TextBox x:Name="Mail_textBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="10,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="Mail" Grid.ColumnSpan="3" Content="Mailing Address" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Height="26" Width="95"/>
+        <TextBox x:Name="Stock_textBox" HorizontalAlignment="Left" Height="23" Margin="13,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Grid.Column="3"/>
+        <Label x:Name="Stock" Content="Stock" HorizontalAlignment="Left" Margin="13,0,0,0" VerticalAlignment="Top" Grid.Column="3" Height="26" Width="39" RenderTransformOrigin="1.368,0.578"/>
+        <TextBox x:Name="Compound_textBox" HorizontalAlignment="Left" Height="23" Margin="0,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Grid.Column="4"/>
+        <Label x:Name="Compound" Content="Compound ID" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="4" Height="26" Width="84"/>
+        <TextBox x:Name="Price_textBox" HorizontalAlignment="Left" Height="23" Margin="13,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Grid.Column="3"/>
+        <Label x:Name="Price" Content="Price" HorizontalAlignment="Left" Margin="13,54,0,0" VerticalAlignment="Top" Grid.Column="3" Height="26" Width="36"/>
+        <TextBox x:Name="Ship_textBox" HorizontalAlignment="Left" Height="23" Margin="13,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Grid.Column="3"/>
+        <Label x:Name="Ship" Content="Shipping Address" HorizontalAlignment="Left" Margin="13,108,0,0" VerticalAlignment="Top" Grid.Column="3" Height="26" Width="103"/>
+    </Grid >
+</Window>
